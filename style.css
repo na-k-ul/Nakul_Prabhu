@@ -34,7 +34,7 @@ body{
 
 
 .pfp-img{
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .name-box{
@@ -90,7 +90,7 @@ svg{
     height: 50px;
     width: 50px;
     color: black;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 svg.linked-in:hover{
@@ -130,7 +130,7 @@ a:hover{
     svg{
         height: 37px;
         width: 37px;
-        padding-top: 37px;
+        margin-top: 37px;
     }
 
     .img-file{
