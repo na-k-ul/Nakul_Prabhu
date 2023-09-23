@@ -1,0 +1,148 @@
+body{
+    background-color: #F8F0E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(9, 90px);
+    grid-template-columns: repeat(13, 50px);
+    width: fit-content;
+    gap: 20px;
+    border-radius: 30%;
+    position: relative;
+
+}
+
+.img-file{
+    height: 180px;
+    width: 180px; 
+    border-radius: 50%;
+}
+
+.float-left{
+    background-color: #EADBC8;
+    border-radius: 20px;
+    grid-row: span 8;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pfp-img{
+    padding-top: 50px;
+}
+
+.name-box{
+    background-color: #EADBC8;
+    border-radius: 20px;
+    grid-column: span 9;
+    grid-row: span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.ap{
+    font-size: 2.5rem;
+    font-family: 'Comic Neue', cursive;
+    text-align: left;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.info{
+    background-color: #EADBC8;
+    border-radius: 20px;
+    grid-column: span 9;
+    grid-row: span 4;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+
+.footer{
+    background-color: #EADBC8;
+    border-radius: 20px;
+    grid-row: span 1;
+    grid-column: span 9; 
+    text-align: right;
+    font-weight: 1000;
+}
+
+.footer-link{
+    color: black;
+    text-decoration: none;
+}
+
+svg{
+    height: 50px;
+    width: 50px;
+    color: black;
+    padding-top: 50px;
+}
+
+svg.linked-in:hover{
+    color: #0072B1;
+    transform: scale(1.25);
+}
+
+svg.insta:hover{
+    color: #d62976;
+    transform: scale(1.25);
+}    
+
+svg.git:hover{
+    color: black; 
+    transform: scale(1.25);
+}
+
+svg.mail:hover{
+    color: #DB4437;
+    transform: scale(1.25);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px){
+    .container{
+        grid-template-rows: repeat(9, 67px);
+        grid-template-columns: repeat(13, 37px);  
+    }
+
+    svg{
+        height: 37px;
+        width: 37px;
+        padding-top: 37px;
+    }
+
+    .img-file{
+        height: 135px;
+        width: 135px; 
+    }
+
+    .name-box{
+        font-size: 45px;
+    }
+
+    .info{
+        font-size: 1.2rem;
+    }
+
+    .footer p{
+        margin: 5px;
+    }
+}
