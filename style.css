@@ -175,7 +175,7 @@ a:hover{
 }
 
 @media (max-width: 640px){
-    .container{
+    html{
         transform: scale(0.25);
     }
 }
