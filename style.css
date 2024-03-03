@@ -5,6 +5,28 @@ body{
     justify-content: center;
 }
 
+.outer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    height: 50px;
+    font-weight: 100;
+    font-size: x-large;
+    position: relative;
+    top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .container{
     display: grid;
     grid-template-rows: repeat(9, 90px);
@@ -114,7 +136,8 @@ svg.mail:hover{
 }
 
 a:hover{
-    text-decoration: underline;
+    font-weight: 500;
+    color: #48433d;
 }
 
 .img-file:hover{
@@ -130,7 +153,7 @@ a:hover{
     svg{
         height: 37px;
         width: 37px;
-        margin-top: 37px;
+        padding-top: 37px;
     }
 
     .img-file{
@@ -153,6 +176,6 @@ a:hover{
 
 @media (max-width: 640px){
     .container{
-        transform: scale(0.51);
+        transform: scale(0.75);
     }
 }
