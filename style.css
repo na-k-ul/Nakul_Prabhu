@@ -176,7 +176,7 @@ a:hover{
 
 @media (max-width: 640px){
     body{
-        transform: scale(0.75);
+        transform: scale();
         overflow-x: hidden;
     }
 }
